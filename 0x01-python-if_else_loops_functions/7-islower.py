@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 def islower(c):
-    first = ord('a')
-    second = ord('z')
-    third = ord(c)
-    if chr(third) >= chr(first) and chr(third) <= chr(second):
+    char_c = chr(ord(c))
+    if  char_c >= chr(ord('a')) and char_c <= chr(ord('z')):
         return True
     else:
         return False
