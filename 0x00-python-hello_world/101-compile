@@ -1,0 +1,3 @@
+#!/bin/bash
+output filename: my_main.pyc
+python3 -m compileall "$PYFILE"
