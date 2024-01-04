@@ -1,4 +1,5 @@
 {
   "editor.formatOnSave": true,
   "editor.tabSize": 4,
+  "workbench.editor.tabSizing": "fit"
 }
