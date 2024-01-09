@@ -14,3 +14,12 @@ pycodestyle --show-source --show-pep8 testing/data/E40.py
 
 Or you can display how often each error was found:
 pycodestyle --statistics -qq Python-2.5/Lib
+
+def print_matrix_integer(matrix=[[]]):
+    for i in matrix:
+        for val, j in enumerate(i):
+            if val < len(i) - 1:
+                print("{}".format(j),end=" ")
+            else:
+                print("{}".format(j), end="")
+        print()
