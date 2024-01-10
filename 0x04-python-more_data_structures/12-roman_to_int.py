@@ -5,17 +5,19 @@ def roman_to_int(roman_string):
 
     total = 0
     prev_value = 0
-    if roman_string is None or roman_string == str:
+    if roman_string is None:
         return 0
+    elif roman_string == str:
+        return 0
+    else:
+        for numeral in reversed(roman_string):
+            value = rom[numeral]
 
-    for numeral in reversed(roman_string):
-        value = rom[numeral]
+            if value < prev_value:
+                total -= value
+            else:
+                total += value
 
-        if value < prev_value:
-            total -= value
-        else:
-            total += value
-
-        prev_value = value
+            prev_value = value
 
     return str(total)
