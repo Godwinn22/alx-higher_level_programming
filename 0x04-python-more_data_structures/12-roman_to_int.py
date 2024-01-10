@@ -5,6 +5,8 @@ def roman_to_int(roman_string):
 
     total = 0
     prev_value = 0
+    if roman_string == None:
+        return 0
 
     for numeral in reversed(roman_string):
         value = rom[numeral]
