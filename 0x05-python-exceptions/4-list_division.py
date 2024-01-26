@@ -11,14 +11,15 @@ def list_division(my_list_1, my_list_2, list_length):
                 else:
                     dividend = 0
                     raise IndexError("out of range")
-                    
+
                 if (i < len(my_list_2)):
                     divisor = my_list_2[i]
                 else:
                     divisor = 1
                     raise IndexError("out of range")
-                
-                # if not isinstance(dividend, (int, float)) and isinstance(divisor, (int, float)):
+
+                # if not isinstance(dividend, (int, float))
+                # and isinstance(divisor, (int, float)):
                 #     raise TypeError("wrong type")
                 # if divisor == 0:
                 #     new_list.append(0)
