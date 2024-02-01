@@ -99,13 +99,11 @@ class Rectangle:
             area1: the first rectangle area
             area2: the second rectangle area
         """
-        area1 = rect_1.area()
-        area2 = rect_2.area()
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if area2 > area1:
+        if rect_2.area() > rect_1.area():
             return rect_2
-        elif area1 >= area2:
+        elif rect_1.area() >= rect_2.area():
             return rect_1
