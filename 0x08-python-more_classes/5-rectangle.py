@@ -76,4 +76,4 @@ class Rectangle:
 
     def __del__(self):
         """This method is called when a deletion happens"""
-        print("Bye Rectangle...")
+        print("Bye rectangle...")
