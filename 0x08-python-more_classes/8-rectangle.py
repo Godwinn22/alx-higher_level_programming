@@ -95,9 +95,6 @@ class Rectangle:
         Args:
             rect_1: the first rectangle
             rect_2: the second rectangle
-        Attributes:
-            area1: the first rectangle area
-            area2: the second rectangle area
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
