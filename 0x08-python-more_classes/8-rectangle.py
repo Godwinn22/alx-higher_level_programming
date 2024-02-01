@@ -96,6 +96,9 @@ class Rectangle:
         Args:
             rect_1: the first rectangle
             rect_2: the second rectangle
+        Attributes:
+            area1: the first rectangle area
+            area2: the second rectangle area
         """
         area1 = rect_1.area()
         area2 = rect_2.area()
