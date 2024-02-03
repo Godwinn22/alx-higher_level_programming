@@ -11,7 +11,8 @@ def matrix_divided(matrix, div):
     matrix (list of lists): the matrix
     div (int) or (float: the divisor number"""
     msg = "matrix must be a matrix (list of lists) of integers/floats"
-    if not isinstance(matrix, list):  # to check if matrix is a list
+    if not isinstance(matrix, list) or matrix == []:
+        # to check if matrix is a list,and if it is not empty
         raise TypeError(msg)
 
     for row in matrix:
