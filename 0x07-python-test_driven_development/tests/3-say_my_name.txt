@@ -24,6 +24,9 @@ Invalid types:
     Traceback (most recent call last):
     TypeError: last_name must be a string
 
+    >>> say_my_name("Godwin", "")
+    My name is Godwin 
+
     >>> say_my_name(5, 5)
     Traceback (most recent call last):
     TypeError: first_name must be a string
