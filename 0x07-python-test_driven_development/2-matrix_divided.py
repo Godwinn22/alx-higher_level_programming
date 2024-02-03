@@ -9,12 +9,7 @@ Then returns the values
 def matrix_divided(matrix, div):
     """This is a function that returns the addition of 2 variables
     matrix (list of lists): the matrix
-    div (int) or (float): the divisor number
-    matrix must be a list of lists of integers or floats
-    otherwise raise a TypeError
-    exception with the message matrix must be a
-    matrix (list of lists) of integers/floats
-    """
+    div (int) or (float: the divisor number"""
     msg = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(matrix, list):  # to check if matrix is a list
         raise TypeError(msg)
