@@ -5,6 +5,7 @@ say_my_name("John", "Smith")
 say_my_name("Walter", "White")
 say_my_name("Bob")
 say_my_name("")
+say_my_name("Godwin john", "hhhh jjj")
 try:
     say_my_name(12, "White")
     say_my_name(None, None)
