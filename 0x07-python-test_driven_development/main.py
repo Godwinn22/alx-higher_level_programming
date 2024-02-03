@@ -7,7 +7,7 @@ print_square(10)
 print("")
 print_square(0)
 print("")
-print_square("6")
+print_square(None)
 print("")
 try:
     print_square(-1)
