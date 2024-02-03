@@ -27,3 +27,15 @@ Invalid types:
     >>> say_my_name(5, 5)
     Traceback (most recent call last):
     TypeError: first_name must be a string
+
+    >>> say_my_name(5)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name(5.999)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Harry", 5.999)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
