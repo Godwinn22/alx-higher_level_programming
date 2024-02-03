@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-matrix_divided = __import__('2-matrix_divided').matrix_divided
+say_my_name = __import__('3-say_my_name').say_my_name
 
-matrix = [[1, 2, 4, 5], [4, 8, 9, 4]]
-print(matrix_divided(matrix, 0))
-print(matrix)
+say_my_name("John", "Smith")
+say_my_name("Walter", "White")
+say_my_name("Bob")
+say_my_name(12, "White")
