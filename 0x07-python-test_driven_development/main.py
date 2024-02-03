@@ -14,3 +14,7 @@ try:
     say_my_name("john", 6)
 except Exception as e:
     print(e)
+try:
+    say_my_name("john", ["8"])
+except Exception as e:
+    print(e)
