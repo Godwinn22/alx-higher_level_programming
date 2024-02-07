@@ -7,7 +7,7 @@ class MyInt(int):
     def __eq__(self, num):
         """Returns the inverted form of !="""
         return int(self) != int(num)
-    
+
     def __ne__(self, num):
         """Returns the inverted form of !="""
-        return int(self) == int(num)        
+        return int(self) == int(num)
