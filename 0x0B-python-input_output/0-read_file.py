@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+""" This is a module that reads a file"""
+
+
+def read_file(filename=""):
+    with open(filename, 'r', encoding="utf-8") as file_1:
+        print(file_1.read())
