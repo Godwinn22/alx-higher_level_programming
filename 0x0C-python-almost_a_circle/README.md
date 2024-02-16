@@ -1,0 +1,1 @@
+# This is a readme file for my ALX project "0x0C-python -almost-a-circle."
