@@ -32,7 +32,7 @@ class Student:
 
     def reload_from_json(self, json):
         """a function that replaces all attributes of an instance.
-        
+
         Args:
             json: a dictionnary
         """
