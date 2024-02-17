@@ -122,6 +122,6 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 # self.__dict__.update(kwargs)
                 # or
-                self.__dict__[key] = value
+                # self.__dict__[key] = value
                 # or
-                # setattr(self, key, value)
+                setattr(self, key, value)
