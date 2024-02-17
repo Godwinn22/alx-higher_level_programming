@@ -87,8 +87,17 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """Prints to stdout the # character for the rectangle"""
-        print("\n".join(["#" * self.__width] * self.__height))
+        """Prints to stdout the # character for the rectangle
+        by handling x and y
+        x is a space
+        y is a new line
+        """
+        for _ in range(self.__y):
+            print("")
+            
+        for j in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
+        
 
     def __str__(self):
         return "[{}] ({}) {}/{} - {}/{}".format(
