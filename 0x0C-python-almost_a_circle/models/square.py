@@ -22,5 +22,5 @@ class Square(Rectangle):
         return [Square] (<id>) <x>/<y> - <size> -
         in our case, width or height
         """
-        return f"[{self.__class__.__name__}]\
-            ({self.id}) {self.x}/{self.y} - {self.size}"
+        a = self.__class__.__name__
+        return f"[{a}]({self.id}) {self.x}/{self.y} - {self.size}"
