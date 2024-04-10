@@ -7,7 +7,7 @@ const b = parseInt(arg2);
 
 function add (a, b) {
   if (isNaN(a) || isNaN(b)) {
-    console.log('Nan');
+    console.log(a + b);
   } else {
     console.log(a + b);
   }
