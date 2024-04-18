@@ -26,9 +26,4 @@ if __name__ == "__main__":
     rows = cur.fetchall()
     # if the row is not empty
     if rows is not None:
-        # loop through the row
-        for row in rows:
-            # prints the second column of the record in that row
-            print(f"{row[1]}", end=", ")
-            # print a new line
-        print()
+        print(", ".join([row[1] for row in rows]))
