@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This is a script that lists all State objects
-from the database hbtn_0e_6_usa
+This is a script that prints the State object with the name passed
+as argument from the database hbtn_0e_6_usa
 """
 from model_state import Base, State
 import sys
@@ -17,8 +17,11 @@ if __name__ == '__main__':
         username, passwd, db_name), pool_pre_ping=True)
 
     Session = sessionmaker(bind=engine)
-
     session = Session()
 
-    for each_instance in session.query(State).order_by(State.id):
-        print("{}: {}".format(each_instance.id, each_instance.name))
+    state_to_edit = session.query(State).filter(State.id == '2').first()
+
+    state_to_edit.name = "New Mexico"
+
+    session.commit()
+    session.close()
