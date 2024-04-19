@@ -9,19 +9,21 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == '__main__':
+    """
+    Deletes State objects on the database.
+    """
     username = sys.argv[1]
     passwd = sys.argv[2]
     db_name = sys.argv[3]
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
-        username, passwd, db_name), pool_pre_ping=True)
+        username, passwd, db_name))
 
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state_to_edit = session.query(State).filter(State.id == '19').first()
-
-    state_to_edit = "New Mexico"
+    for each_instance in session.query(State).filter(State.name.contains('a')):
+        session.delete(each_instance)
 
     session.commit()
     session.close()
